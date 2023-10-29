@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url(2img.jpg);
+    background-size:cover;
+    background-attachment:fixed; 
+    }
+
+header {
+   background-color: aqua;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    }
+    
+.scrollable-text {
+position: absolute;
+animation: scrollText 100s linear infinite;
+
+}
+.blinking-text {
+animation: blinkText 20s alternate infinite;
+color: white;
+}
+@keyframes scrollText {
+0% {
+transform: translateX(100%);
+}
+100% {
+transform: translateX(-100%);
+}
+}
+@keyframes blinkText {
+0%, 100% {
+opacity: 1;
+}
+50% {
+opacity: 0;
+}
+}
+</style>
+<title>CSS Animation Demo</title>
+</head>
+<body>
+    <header>
+        <h2>Welcome to Mahabaleshwar</h2>
+        </header>
+       <h2>Mahabaleshwar is the ideal hill station getaway from Mumbai with its mesmerising waterfalls, old forts, historic temples and long stretches of vibrant strawberry plantations.</h2>
+<main>
+    <div class="blinking-text">
+    <center><h2>BEST MONTHS TO VISIT</h2></center> 
+ <center><h2><p>NOV-FEB</p></h2></center>
+ </div>
+ <div class="scrollable-text">
+     <h2><p>DO VISIT THIS BEAUTIFUL AND CAPTIVATING HILL STATION!!</p></h2>
+     </div>
+</main>
+</body>
+</html>
